@@ -1,3 +1,9 @@
+.backGroundCustom {
+        background-color: #F5F5F5;
+        margin-top: 1%;
+        color: rgba(0,0,0,.87);
+        font-family: 'Roboto', sans-serif;
+    }
 .btnEnviar {
 		float: right !important;
 	}
@@ -7,10 +13,16 @@
         height: 0;
         overflow: hidden;
     }
-    .google-maps iframe {
+.google-maps iframe {
         position: absolute;
         top: 0;
         left: 0;
         width: 100% !important;
         height: 100% !important;
+    }
+.boxCustom {
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 0px 2px 1px rgba(122,122,122,1);
+        -moz-box-shadow: 0px 0px 2px 1px rgba(122,122,122,1);
+        box-shadow: 0px 0px 2px 1px rgba(209,209,209,1);
     }
