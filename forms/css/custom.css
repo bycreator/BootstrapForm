@@ -1,3 +1,9 @@
+/*  Custom UIKit - Pesta Precos
+    Author: Tiago Serra
+    SiteAuthor: www.tiagoserra.com.br
+    Dsigner ByCreator - www.dsignerbycreator.com.br
+ */
+
 .backGroundCustom {
         background-color: #F5F5F5;
         margin-top: 1%;
@@ -29,6 +35,8 @@
 .colorCustomh3 {
         color: #5989B8;
     }
+
+/* Medias Queries */
 
     @media (max-width:767px) {
         .boxCustom {
