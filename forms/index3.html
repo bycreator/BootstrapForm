@@ -1,0 +1,410 @@
+<!--  Custom UIKit - Pesta Precos
+    Author: Tiago Serra
+    SiteAuthor: www.tiagoserra.com.br
+    Dsigner ByCreator - www.dsignerbycreator.com.br
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <title>Form - Contato</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/formValidation.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/formValidation.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body class="backGroundCustom">
+
+	<div class="container">
+        <div class="row col-lg-12">
+            <!-- form: -->
+            <section>
+                <div class="col-lg-8 boxCustom">
+                   
+                        <h3 class="colorCustomh3">Empresas sem Sites</h3>
+                        <hr>
+                  
+                        <h4 class="colorCustomh3">Informações de acesso a conta</h4>
+                    <form id="defaultForm" method="post" class="form-horizontal" action="target.php">
+
+                        <div class="col-lg-6 form-group">
+                            <label class="col-lg-3 control-label">Email</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control emailAddress" name="email" placeholder="Email" />
+                                    <span class="help-block" id="EmailMessage" />
+                                </div>
+                        </div>
+                        <div class="col-lg-6 form-group">
+                            <label class="col-lg-3 control-label">Senha</label>
+                            <div class="col-lg-9">
+                                <input type="password" class="form-control" name="pass" placeholder="Senha" />
+                                <span class="help-block" id="pass" />
+                            </div>
+                            
+                        </div>
+                            <h4 class="colorCustomh3">Informações institucionais</h4>
+                            
+                            <div class="form-group">
+                             <label class="col-lg-3 control-label">Descrição da empresa</label>
+                                <div class="col-lg-9">
+        	                        <textarea class="form-control" name="message" rows="5" placeholder="Descrição da empresa"></textarea>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-xs-3 control-label">Sua logo marca</label>
+                                <div class="col-xs-6">
+                                    <input class="form-control" name="fileName" type="file" />
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                            <label class="col-lg-3 control-label">Nome do profissional ou da empresa</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="firstName" placeholder="Nome" />
+                                <span class="help-block" id="NameMessage" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+
+                            <label class="col-lg-3 control-label">Segmento da empresa</label>
+                            <div class="col-lg-5">
+                                <select class="form-control" name="category">
+				                    <option value=""> - - - </option>
+				                    <option value="Moda e Cia">Moda e Cia</option>
+				                    <option value="Sapataria">Sapataria</option>
+				                    <option value="Bebes e Cia">Bebes e Cia</option>
+				                    <option value="Supermercado">Supermercado</option>
+				                    <option value="Minimercado">Minimercado</option>
+				                    <option value="Frigorifico">Frigorifico</option>
+				                    <option value="Restaurante">Restaurante</option>
+				                    <option value="Lanchonete">Lanchonete</option>
+				                    <option value="Pastelaria">Pastelaria</option>
+				                    <option value="Pizzaria">Pizzaria</option>
+				                    <option value="Padaria">Padaria</option>
+				                    <option value="Doces e Salgados">Doces e Salgados</option>
+				                    <option value="Moveis e Eletros">Móveis e Eletros</option>
+				                    <option value="Tecnologia e Eletros">Tecnologia e Eletros</option>
+				                    <option value="Celulares e Smartphones">Celulares e Smartphones</option>
+				                    <option value="Mobile">Mobile</option>
+				                    <option value="Beleza">Beleza</option>
+				                    <option value="Fitness">Fitness</option>
+				                    <option value="Clinica de estetica">Clínica de estética</option>
+				                    <option value="Clinica medica">Clínica médica</option>
+				                    <option value="Dentista">Dentista</option>
+				                    <option value="Farmacia">Farmácia</option>
+				                    <option value="Laboratorios de analises clinicas">Laboratórios de análises clinicas</option>
+				                    <option value="Games">Games</option>
+				                    <option value="Esporte">Esporte</option>
+				                    <option value="Pet e Agro">Pet e Agro</option>
+                            <option value="Loja de autopecas">Loja de autopeças</option>
+				                    <option value="Concessionaria de veiculos">Concessionária de veículos</option>
+				                    <option value="Loja de departamentos">Loja de departamentos</option>
+				                    <option value="Livraria">Livraria</option>
+				                    <option value="Papelaria">Papelaria</option>
+				                    <option value="Construcao">Construção</option>
+				                    <option value="Audio Visual">Áudio Visual</option>
+				                    <option value="Arte e Decoracao">Arte e Decoração</option>
+				                    <option value="Adulto">Adulto</option>
+				                    <option value="Festas e Eventos">Festas e Eventos</option>
+				                    <option value="Imoveis">Imóveis</option>
+				                    <option value="Salao de Beleza">Salão de Beleza</option>
+				                    <option value="Hoteis e Pousadas">Hotéis e Pousadas</option>
+				                    <option value="Financeiro">Financeiro</option>
+				                    <option value="Servicos graficos">Serviços gráficos</option>
+				                    <option value="Oficina">Oficina</option>
+				                    <option value="Assistencia tecnica">Assistência técnica</option>
+				                    <option value="Servicos empresariais">Serviços empresariais</option>
+				                    <option value="Advogados">Advogados</option>
+				                    <option value="Transportes">Transportes</option>
+				                    <option value="Outro">Outro</option>
+				                </select>
+                                <span class="help-block" id="Segmento" />
+                            </div>
+                            
+                        </div>
+                          <div class="form-group">
+                            <label class="col-lg-3 control-label">Palavras chaves</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="chaves" placeholder="Palavras chaves" />
+                                <span class="help-block" id="chaves" />
+                            </div>
+                            
+                        </div>
+                        
+                        <h4 class="colorCustomh3">Informações de acesso a conta(Essas informações serão vistas pelos clientes)</h4>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Logradouro, Nº</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="Logradouro" placeholder="Logradouro" />
+                                <span class="help-block" id="Logradouro" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">CEP, Bairro</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="CEP" placeholder="CEP, Bairro" />
+                                <span class="help-block" id="CEP" />
+                            </div>
+                                       
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Cidade, Estado</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="cidade" placeholder="Cidade, Estado" />
+                                <span class="help-block" id="cidade" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Horário de funcionamento</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="Horario" placeholder="Horário de funcionamento" />
+                                <span class="help-block" id="Horario" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Telefone</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="Telefone" placeholder="Telefone" />
+                                <span class="help-block" id="Telefone" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Email</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control email" name="email" placeholder="Email" />
+                                    <span class="help-block" id="Email" />
+                                </div>
+                        </div>
+                        
+                        <div class="form-group">
+        <label class="col-xs-3 control-label">Terms of use</label>
+        <div class="col-xs-9">
+            <div style="border: 1px solid #e5e5e5; height: 200px; overflow: auto; padding: 10px;">
+                <p>Lorem ipsum dolor sit amet, veniam numquam has te. No suas nonumes recusabo mea, est ut graeci definitiones. His ne melius vituperata scriptorem, cum paulo copiosae conclusionemque at. Facer inermis ius in, ad brute nominati referrentur vis. Dicat erant sit ex. Phaedrum imperdiet scribentur vix no, ad latine similique forensibus vel.</p>
+                <p>Dolore populo vivendum vis eu, mei quaestio liberavisse ex. Electram necessitatibus ut vel, quo at probatus oportere, molestie conclusionemque pri cu. Brute augue tincidunt vim id, ne munere fierent rationibus mei. Ut pro volutpat praesent qualisque, an iisque scripta intellegebat eam.</p>
+                <p>Mea ea nonumy labores lobortis, duo quaestio antiopam inimicus et. Ea natum solet iisque quo, prodesset mnesarchum ne vim. Sonet detraxit temporibus no has. Omnium blandit in vim, mea at omnium oblique.</p>
+                <p>Eum ea quidam oportere imperdiet, facer oportere vituperatoribus eu vix, mea ei iisque legendos hendrerit. Blandit comprehensam eu his, ad eros veniam ridens eum. Id odio lobortis elaboraret pro. Vix te fabulas partiendo.</p>
+                <p>Natum oportere et qui, vis graeco tincidunt instructior an, autem elitr noster per et. Mea eu mundi qualisque. Quo nemore nusquam vituperata et, mea ut abhorreant deseruisse, cu nostrud postulant dissentias qui. Postea tincidunt vel eu.</p>
+                <p>Ad eos alia inermis nominavi, eum nibh docendi definitionem no. Ius eu stet mucius nonumes, no mea facilis philosophia necessitatibus. Te eam vidit iisque legendos, vero meliore deserunt ius ea. An qui inimicus inciderint.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-xs-6 col-xs-offset-3">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" name="agree" value="agree" /> Aceito os termos de uso e as políticas de privacidade.
+                </label>
+            </div>
+        </div>
+    </div>
+
+
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-primary btnEnviar">Enviar</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </section>
+            <!-- :form -->
+
+			<div class="col-lg-4">
+				
+                        <h3 class="colorCustomh3">SIDEBAR</h3>
+                        <hr>
+				
+				<div class="google-maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.072268298493!2d-38.4951748!3d-3.7944292999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f7a84aa9c13%3A0x97907408d1fc1f6d!2sR.+Vicente+Lopes%2C+924+-+Cidade+dos+Funcion%C3%A1rios%2C+Fortaleza+-+CE%2C+60822-104!5e0!3m2!1spt-BR!2sbr!4v1436277607583" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+
+        </div>
+    </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#defaultForm').formValidation({
+        message: 'Esse valor não e valido',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+
+		email: {
+                // All the email address field have emailAddress class
+                selector: '.emailAddress',
+                validators: {
+                    callback: {
+                        message: 'Coloque o email por favor',
+                        callback: function(value, validator, $field) {
+                            var isEmpty = true,
+                                // Get the list of fields
+                                $fields = validator.getFieldElements('email');
+                            for (var i = 0; i < $fields.length; i++) {
+                                if ($fields.eq(i).val() !== '') {
+                                    isEmpty = false;
+                                    break;
+                                }
+                            }
+
+                            if (!isEmpty) {
+                                // Update the status of callback validator for all fields
+                                validator.updateStatus('email', validator.STATUS_VALID, 'callback');
+                                return true;
+                            }
+
+                            return false;
+                        }
+                    },
+                    emailAddress: {
+                        message: 'Digite um email válido'
+                    }
+                }
+            
+        	},
+
+        /*	message: {
+                // The messages for this field are shown as usual
+                validators: {
+                    notEmpty: {
+                        message: 'Escreva sua mensagem.'
+                    },
+                    stringLength: {
+                        min: 20,
+                        max: 500,
+                        message: 'Sua mensagem deve ter no minimo 15 caracteres e no máximo 500.'
+                    }
+                }
+            },*/
+
+            firstName: {
+                err: '#NameMessage',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque seu nome.'
+                    }
+                }
+            },
+            pass: {
+                err: '#pass',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque sua senha.'
+                    }
+                }
+            },
+            chaves: {
+                err: '#chaves',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque pelo menos uma palavra chave.'
+                    }
+                }
+            }, 
+            
+            agree: {
+                validators: {
+                    notEmpty: {
+                        message: 'Você tem que aceita os termos e condições'
+                    }
+                }
+            }, 
+            
+            Horario: {
+                err: '#Horario',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque seu Horário de funcionamento.'
+                    }
+                }
+            },
+            Telefone: {
+                err: '#Telefone',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque seu Telefone.'
+                    }
+                }
+            },
+            Logradouro: {
+                err: '#Logradouro',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque seu Logradouro.'
+                    }
+                }
+            },
+            
+            cidade: {
+                err: '#cidade',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque sua cidade e estado.'
+                    }
+                }
+            },
+            
+            CEP: {
+                err: '#CEP',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque seu CEP e Bairro.'
+                    }
+                }
+            }, 
+
+            gender: {
+                validators: {
+                    notEmpty: {
+                        message: 'Escolha um assunto por favor.'
+                    }
+                }
+            },
+                            fileName: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Coloque sua logo'
+                        },
+                        file: {
+                            extension: 'pdf',
+                            type: 'application/pdf',
+                            maxSize: 2 * 1024 * 1024,
+                            message: 'Coloque a logo em .pdf e no máximo 2MB de tamanho'
+                        }
+                    }
+                }
+            
+            
+        }
+    });
+});
+</script>
+
+</body>
+
+</html>
