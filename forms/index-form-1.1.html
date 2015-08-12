@@ -1,0 +1,371 @@
+<!--  Custom UIKit - Pesta Precos
+    Author: Tiago Serra
+    SiteAuthor: www.tiagoserra.com.br
+    Dsigner ByCreator - www.dsignerbycreator.com.br
+ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <title>Form - SITES EXTERNOS AO COMMERCE10</title>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/formValidation.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/formValidation.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+</head>
+<body class="backGroundCustom">
+
+	<div class="container">
+        <div class="row col-lg-12">
+            <!-- form: -->
+            <section>
+                <div class="col-lg-8 boxCustom">
+                   
+                        <h3 class="colorCustomh3">Sites externos ao Commerce10</h3>
+                        <hr>
+                  
+                        <h4 class="colorCustomh3">Informações de acesso a conta</h4>
+                    <form id="defaultForm" method="post" class="form-horizontal" action="target.php">
+
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Nome do produto</label>
+                                <div class="col-lg-9">
+                                    <input type="text" class="form-control" name="produto" placeholder="Nome do produto" />
+                                    <span class="help-block" id="produto" />
+                                </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">SKU/Cód</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="SKUCod" placeholder="SKU/Cód" />
+                                <span class="help-block" id="SKUCod" />
+                            </div>
+                            
+                        </div>  	
+                            
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">URL do produto</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="URLproduto" placeholder="URL do produto" />
+                                <span class="help-block" id="URLproduto" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">URL do fabricante do produto </label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="fabricante" placeholder="URL do fabricante" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group linha-central">
+                            <label class="col-lg-3 control-label ">Preço anterior</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="anterior" placeholder="Preço anterior" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Preço atual</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="atual" placeholder="Preço atual" />
+                                <span class="help-block" id="atual" />
+                            </div>
+                        </div>      
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Categoria do produto</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="Categoria" placeholder="Categoria do produto" />
+                                <span class="help-block" id="Categoria" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Subcategoria do produto</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="Subcategoria" placeholder="Subcategoria do produto" />
+                                <span class="help-block" id="Subcategoria" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">Descrição do produto</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="Descricao" placeholder="Descrição do produto" />
+                                <span class="help-block" id="Descricao" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                             <label class="col-lg-3 control-label">Principais características (separadas por virgula) </label>
+                                <div class="col-lg-9">
+        	                        <textarea class="form-control" name="caracteristicas" rows="5" placeholder="Principais características"></textarea>
+                                  <span class="help-block" id="caracteristicas" />
+                                </div>
+                            </div>
+                            
+                        <div class="col-lg-5 form-group">
+                            <label class="col-lg-6 control-label">Número de parcelas</label>
+                                <div class="col-lg-6">
+                                    <input type="text" class="form-control" name="NumeroParcelas" placeholder="Parcelas" />
+                                    <span class="help-block" id="NumeroParcelas" />
+                                </div>
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label class="col-lg-5 control-label">Valor da parcela</label>
+                            <div class="col-lg-7">
+                                <input type="text" class="form-control" name="ValorParcela" placeholder="Valor" />
+                                <span class="help-block" id="ValorParcela" />
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-4 form-group">
+                            <label class="col-lg-7 control-label">A vista, desconto de</label>
+                            <div class="col-lg-5">
+                                <input type="text" class="form-control" name="desconto" placeholder="desconto" />
+                                <span class="help-block" id="desconto" />
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">URL de um produto similar</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="PodutoSimilar" placeholder="URL de um produto similar" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">URL de um produto similar</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="PodutoSimilar" placeholder="URL de um produto similar" />
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-3 control-label">URL de um produto similar</label>
+                            <div class="col-lg-9">
+                                <input type="text" class="form-control" name="PodutoSimilar" placeholder="URL de um produto similar" />
+                            </div>
+                            
+                        </div>
+                        
+                        
+
+
+                        <div class="form-group">
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-primary btnEnviar" id="saveButton">Salvar</button>
+                              <button type="submit" class="btn btn-default btnEnviar" id="publishButton">Ativar</button>
+                            </div>
+                        </div>
+
+
+                    </form>
+                </div>
+            </section>
+            <!-- :form -->
+
+			<div class="col-lg-4">
+				
+                        <h3 class="colorCustomh3">SIDEBAR</h3>
+                        <hr>
+				
+				<div class="google-maps">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.072268298493!2d-38.4951748!3d-3.7944292999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74f7a84aa9c13%3A0x97907408d1fc1f6d!2sR.+Vicente+Lopes%2C+924+-+Cidade+dos+Funcion%C3%A1rios%2C+Fortaleza+-+CE%2C+60822-104!5e0!3m2!1spt-BR!2sbr!4v1436277607583" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+			</div>
+
+        </div>
+    </div>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#defaultForm').formValidation({
+        message: 'Esse valor não e valido',
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+
+		email: {
+                // All the email address field have emailAddress class
+                selector: '.emailAddress',
+                validators: {
+                    callback: {
+                        message: 'Coloque o email por favor',
+                        callback: function(value, validator, $field) {
+                            var isEmpty = true,
+                                // Get the list of fields
+                                $fields = validator.getFieldElements('email');
+                            for (var i = 0; i < $fields.length; i++) {
+                                if ($fields.eq(i).val() !== '') {
+                                    isEmpty = false;
+                                    break;
+                                }
+                            }
+
+                            if (!isEmpty) {
+                                // Update the status of callback validator for all fields
+                                validator.updateStatus('email', validator.STATUS_VALID, 'callback');
+                                return true;
+                            }
+
+                            return false;
+                        }
+                    },
+                    emailAddress: {
+                        message: 'Digite um email válido'
+                    }
+                }
+            
+        	},
+
+        /*	message: {
+                // The messages for this field are shown as usual
+                validators: {
+                    notEmpty: {
+                        message: 'Escreva sua mensagem.'
+                    },
+                    stringLength: {
+                        min: 20,
+                        max: 500,
+                        message: 'Sua mensagem deve ter no minimo 15 caracteres e no máximo 500.'
+                    }
+                }
+            },*/
+
+            produto: {
+                err: '#produto',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque seu nome do produto.'
+                    }
+                }
+            },
+            URLproduto: {
+                err: '#URLproduto',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque a URL do produto.'
+                    }
+                }
+            }, 
+            Categoria: {
+                err: '#Categoria',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque a categoria do produto.'
+                    }
+                }
+            },
+            atual: {
+                err: '#atual',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque o preço atual.'
+                    }
+                }
+            }, 
+            Subcategoria: {
+                err: '#Subcategoria',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque a subcategoria do produto.'
+                    }
+                }
+            }, 
+            
+            Descricao: {
+                err: '#Descricao',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque a descrição do produto.'
+                    }
+                }
+            },
+            
+            NumeroParcelas: {
+                err: '#NumeroParcelas',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque o número de parcelas'
+                    }
+                }
+            }, 
+            
+            ValorParcela: {
+                err: '#ValorParcela',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque o valor de cada parcela.'
+                    }
+                }
+            },
+            desconto: {
+                err: '#desconto',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque o desconto de a vista.'
+                    }
+                }
+            },
+            
+            caracteristicas: {
+                err: '#caracteristicas',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque as principais características .'
+                    }
+                }
+            },
+            
+            SKUCod: {
+                err: '#SKUCod',
+                validators: {
+                    notEmpty: {
+                        message: 'Coloque o SKU/Cód.'
+                    }
+                }
+            }, 
+
+            gender: {
+                validators: {
+                    notEmpty: {
+                        message: 'Escolha um assunto por favor.'
+                    }
+                }
+            },
+                            fileName: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Coloque sua logo'
+                        },
+                        file: {
+                            extension: 'pdf',
+                            type: 'application/pdf',
+                            maxSize: 2 * 1024 * 1024,
+                            message: 'Coloque a logo em .pdf e no máximo 2MB de tamanho'
+                        }
+                    }
+                }
+            
+            
+        }
+    });
+});
+</script>
+
+</body>
+
+</html>

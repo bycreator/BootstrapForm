@@ -1,0 +1,55 @@
+/*  Custom UIKit - Pesta Precos
+    Author: Tiago Serra
+    SiteAuthor: www.tiagoserra.com.br
+    Dsigner ByCreator - www.dsignerbycreator.com.br
+ */
+ 
+ /* jon */
+ 
+ .linha-central input.form-control {
+  text-decoration: line-through;
+}
+ 
+ /*fim jon*/
+
+.backGroundCustom {
+        background-color: #F5F5F5;
+        margin-top: 1%;
+        color: rgba(0,0,0,.87);
+        font-family: 'Roboto', sans-serif;
+    }
+.btnEnviar {
+		float: right !important;
+	}
+.google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+.google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+    }
+.boxCustom {
+        background-color: #ffffff;
+        -webkit-box-shadow: 0px 0px 2px 1px rgba(122,122,122,1);
+        -moz-box-shadow: 0px 0px 2px 1px rgba(122,122,122,1);
+        box-shadow: 0px 0px 2px 1px rgba(209,209,209,1);
+    }
+.colorCustomh3 {
+        color: #5989B8;
+    }
+
+/* Medias Queries */
+
+    @media (max-width:767px) {
+        .boxCustom {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        }
+    }
+    
